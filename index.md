@@ -4,6 +4,8 @@ For more efficicient processing, an array of text (haystack) is created only onc
 
 Split function can be called before For Loop
 This reduces CPU and memory usage since the current code regex computation and split call happen for each iteration.
+
+```bash
 else {
           int[] countArray = new int[needles.length];
           String[] words = haystack.split("[ \"\'\t\n\b\f\r]", 0);
@@ -14,6 +16,7 @@ else {
                   }
               }
           }
+```
 
 ```bash
 public static void findNeedles(String haystack, String[] needles) {
