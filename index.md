@@ -52,7 +52,7 @@ Replace the abstract figurative function name with an informative speaking name,
 
  Do not comment on what the function does but what it intents to accomplish and/or why.
  
- For example, `// find and count occurances of each `needles` string in the `haystack` string
+ For example, `// find and count occurances of each needle in the haystack
 
 ### Logic behind
 
