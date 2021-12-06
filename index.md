@@ -48,6 +48,12 @@ Replace the abstract figurative function name with an informative speaking name,
 
 `findNeedles(haystack, needlesList)` => `countWordsInString(str, wordsList)`
 
+## Add comments
+
+ Do not comment on what the function does but what it intents to accomplish and/or why.
+ 
+ Compare "// loop over array of numbers and add them together" with "// compute sum of all product prices in cart".
+
 ### Logic behind
 
 ```java
