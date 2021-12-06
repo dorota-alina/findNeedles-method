@@ -52,7 +52,7 @@ Replace the abstract figurative function name with an informative speaking name,
 
  Do not comment on what the function does but what it intents to accomplish and/or why.
  
- Compare "// loop over array of numbers and add them together" with "// compute sum of all product prices in cart".
+ For example, `// find and count occurances of each `needles` string in the `haystack` string
 
 ### Logic behind
 
