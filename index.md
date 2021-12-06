@@ -1,8 +1,8 @@
 # findNeedles - ideas for improvement
 
-## Slim down loops
+## Slim down your loops
 
-For efficicient processing and reducing CPU/memory usage, split `haystack` just once by moving the `split` function outside the loops.
+For improving performance and efficiency (reducing the use of CPU/memory), split `haystack` just once by moving the `split` function outside the loops.
 
 ```java
 public static void findNeedles(String haystack, String[] needles) {
