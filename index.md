@@ -1,5 +1,7 @@
 # findNeedles - ideas for improvement
 
+## Split just once
+
 For efficicient processing and reducing CPU/memory usage, `haystack` is split into words just once.
 
 ```java
@@ -22,6 +24,27 @@ public static void findNeedles(String haystack, String[] needles) {
     }
 }
 ```
+
+## Use enhanced nested loops
+
+```bash
+for (int i = 0; i < needles.length; i++) {
+    for (int j = 0; j < words.length; j++) {
+```
+
+ || || || || || || || || || || || || || || ||
+ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/
+ 
+```bash
+for (String needle : needles) {
+for (String word : words) {
+```
+
+## Function name
+
+Replace the abstract figurative function name with an informative speaking name, for example
+
+`findNeedles(haystack, needlesList)` => `countWordsInString(str, wordsList)`
 
 ### Logic behind
 
