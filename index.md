@@ -1,8 +1,8 @@
 # findNeedles - ideas for improvement
 
-## Split just once
+## Slim down loops
 
-For efficicient processing and reducing CPU/memory usage, `haystack` is split into words just once.
+For efficicient processing and reducing CPU/memory usage, split `haystack` just once by moving the `split` function outside the loops.
 
 ```java
 public static void findNeedles(String haystack, String[] needles) {
@@ -13,19 +13,9 @@ public static void findNeedles(String haystack, String[] needles) {
           String[] words = haystack.split("[ \"\'\t\n\b\f\r]", 0);
           for (int i = 0; i < needles.length; i++) {
               for (int j = 0; j < words.length; j++) {
-                  if (words[j].compareTo(needles[i]) == 0) {
-                      countArray[i]++;
-                }
-            }
-        }
-        for (int j = 0; j < needles.length; j++) {
-            System.out.println(needles[j] + ": " + countArray[j]);
-        }
-    }
-}
 ```
 
-## Use enhanced nested loops
+## Use enhanced loops
 
 For iterating over collections using loops
 
@@ -34,20 +24,20 @@ for (int i = 0; i < needles.length; i++) {
     for (int j = 0; j < words.length; j++) {
 ```
 
-Consider using enhanced  loops
+Consider using enhanced loops to save some code space
  
 ```bash
 for (String needle : needles) {
     for (String word : words) {
 ```
 
-## Input parameters sequence
+## Sequence the input
 
-Provide `haystack` as the 1st parameter and `needles` as the 2nd one for ease of use and memory use reduction.
+Provide `haystack` as the 1st parameter and `needles` as the 2nd one for ease of use and reduced memory allocation.
 
-## Function name
+## Name the function
 
-Replace the abstract figurative function name with an informative speaking name, for example
+Replace the abstract (figurative) function name with an informative (speaking) name, for example
 
 `findNeedles(haystack, needlesList)` => `countWordsInString(str, wordsList)`
 
@@ -56,13 +46,4 @@ Replace the abstract figurative function name with an informative speaking name,
  Do not comment on what the function does but what it intents to accomplish and/or why.
  
  For example, `// find and count occurances of each needle in the haystack`
-
-<!-- ### Operational sequence
-
-1. `findNeedles` checks if the size of the `needles` array is greater than five.
-   * If greater than five, it output an error message and exites.
-   * If smaller or equal five, it proceeeds to step 2.
-2. `findNeedles` uses the `split` function to divide the input string using the following literals: `"`, `'`, `t`, `n`, `b`, `f`, `r`. The `haystack` string is split into words, which constitute the `words` array.
-3. `findNeedles` compares each element of the `needles` array to each element of the `words`array.
-4. If a `needle` occurs within the `words` array, the count for this `needle` is launched.
-5. With the search and all the counts completed, `findNeedles` outputs a list of matched `needles` with their occurence count results. -->
+ 
