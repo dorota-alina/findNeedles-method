@@ -24,7 +24,7 @@ for (int i = 0; i < needles.length; i++) {
     for (int j = 0; j < words.length; j++) {
 ```
 
-Consider using enhanced loops to save some code space
+Consider using enhanced loops to save some code space:
  
 ```bash
 for (String needle : needles) {
@@ -39,11 +39,11 @@ Provide `haystack` as the 1st parameter and `needles` as the 2nd one for ease of
 
 Replace the abstract (figurative) function name with an informative (speaking) name, for example
 
-`findNeedles(haystack, needlesList)` => `countWordsInString(str, wordsList)`
+`findNeedles(haystack, needlesList)` => `countWordsInString(str, wordsList)`.
 
 ## Add comments
 
- Do not comment on what the function does but what it intents to accomplish and/or why.
+ Insert comments on what the function intents to accomplish and/or why.
  
  For example, `// find and count occurances of each needle in the haystack`
  
