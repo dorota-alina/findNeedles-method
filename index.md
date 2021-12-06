@@ -27,19 +27,18 @@ public static void findNeedles(String haystack, String[] needles) {
 
 ## Use enhanced nested loops
 
+For iterating over collections using loops
+
 ```bash
 for (int i = 0; i < needles.length; i++) {
     for (int j = 0; j < words.length; j++) {
 ```
 
- ```bash
- || || || || || || || || || || || || || || ||
- \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/
- ```
+Consider using enhanced  loops
  
 ```bash
 for (String needle : needles) {
-for (String word : words) {
+    for (String word : words) {
 ```
 
 ## Input parameters sequence
