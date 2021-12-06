@@ -42,6 +42,10 @@ for (String needle : needles) {
 for (String word : words) {
 ```
 
+## Input parameters sequence
+
+Provide `haystack` as the 1st parameter and `needles` as the 2nd one for ease of use and memory use reduction.
+
 ## Function name
 
 Replace the abstract figurative function name with an informative speaking name, for example
