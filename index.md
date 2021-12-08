@@ -37,10 +37,6 @@ for (String needle : needles) {
     for (String word : words) {
 ```
 
-## Sequence the input
-
-Provide `haystack` as the 1st parameter and `needles` as the 2nd one for ease of use and reduced memory allocation.
-
 ## Name the function
 
 Replace the abstract (figurative) function name with an informative (speaking) name, for example
