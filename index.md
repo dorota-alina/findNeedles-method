@@ -1,4 +1,10 @@
 # findNeedles - ideas for improvement
+>CONTENTS
+>>[Slim down your loops](#slim-down-your-loops)<br>
+>>[Use enhanced loops](#use-enhanced-loops)<br>
+>>[Sequence the input](#sequence-the-input)<br>
+>>[Name the function](#name-the-function)<br>
+>>[Add comments](#add-comments)<br>
 
 ## Slim down your loops
 
